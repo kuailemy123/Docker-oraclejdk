@@ -17,5 +17,5 @@
 ---
 ```
 echo 'public class Main { public static void main(String[] args) { System.out.println("Hello Docker."); } }' > Main.java
-docker run --rm -v "$(pwd)":/mnt --workdir /mnt lework/oraclejdk:v8.131.11-slim sh -c "javac Main.java && java Main"
+docker run --rm -v "$(pwd)":/mnt --workdir /mnt lework/oraclejdk:v8.131.11-full sh -c "javac Main.java && java Main"
 ```
