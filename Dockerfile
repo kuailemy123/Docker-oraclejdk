@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM lework/alpine-glibc:alpine-3.7_glibc-2.27
 
 ENV JAVA_VERSION=8 \
     JAVA_UPDATE=131 \
