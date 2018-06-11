@@ -54,4 +54,4 @@ RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates unzip &
            "$JAVA_HOME/jre/lib/jfr" \
            "$JAVA_HOME/jre/lib/oblique-fonts" && \
     apk del build-dependencies && \
-    rm -rf "/tmp/*"
+    rm "/tmp/"*
