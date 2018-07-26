@@ -7,7 +7,7 @@ ENV JAVA_VERSION=8 \
     JAVA_HOME="/usr/lib/jvm/default-jvm"
 
 RUN apk --update -t --no-cache add tzdata && \
-    ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
+    ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo "Asia/Shanghai" > /etc/timezone && \
     apk add --no-cache --virtual=build-dependencies wget ca-certificates unzip && \
     cd "/tmp" && \
